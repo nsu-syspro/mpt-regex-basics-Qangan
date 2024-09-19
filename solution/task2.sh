@@ -1,1 +1,2 @@
-grep '[вВ]ина' -o ./data/pushkin.txt | wc | awk '{print $1}' 
+grep -wio 'вина' ./data/pushkin.txt | wc | awk '{print $1}'
+
